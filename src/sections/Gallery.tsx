@@ -10,7 +10,7 @@ export default function Gallery() {
         </motion.div>
         <div className="grid gap-4 md:grid-cols-3">
           <motion.figure initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6 }} className="overflow-hidden rounded-2xl border border-slate-300 bg-white shadow dark:border-slate-700 dark:bg-slate-900">
-            <img src="/ali.jpeg" alt="Ali Abbas" className="h-56 w-full object-cover" />
+            <div className="h-56 w-full bg-gradient-to-br from-indigo-200 to-cyan-200 dark:from-indigo-500/20 dark:to-cyan-500/20" />
             <figcaption className="p-4 text-sm text-slate-700 dark:text-slate-300">Always iterating on clean, human-friendly interfaces.</figcaption>
           </motion.figure>
           <motion.figure initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6, delay: 0.05 }} className="overflow-hidden rounded-2xl border border-slate-300 bg-white shadow dark:border-slate-700 dark:bg-slate-900">
