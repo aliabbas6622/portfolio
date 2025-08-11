@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { fadeInUp, staggerContainer, transition } from '../lib/animations'
-import { Github, Linkedin } from 'lucide-react'
 
 export default function Contact() {
   const [sending, setSending] = useState(false)

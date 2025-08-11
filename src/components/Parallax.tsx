@@ -1,5 +1,8 @@
-import { PropsWithChildren, useRef } from 'react'
+import type { PropsWithChildren } from "react";
+
 import { motion, useScroll, useTransform } from 'framer-motion'
+
+import { useRef } from "react";
 
 export default function Parallax({ children, intensity = 30, className = '' }: PropsWithChildren<{ intensity?: number; className?: string }>) {
   const ref = useRef<HTMLDivElement | null>(null)
