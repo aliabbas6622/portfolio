@@ -46,7 +46,7 @@ export default function Hero() {
             className="flex justify-center md:justify-end"
           >
             <div className="relative aspect-[4/5] w-60 overflow-hidden rounded-[24px] border border-slate-200 bg-white shadow-2xl md:w-[22rem] lg:w-[24rem] dark:bg-slate-900 dark:border-slate-800">
-              <img src="/ali.jpeg" alt="Ali Abbas" className="h-full w-full object-cover" />
+              <div className="h-full w-full bg-gradient-to-br from-indigo-300/40 via-sky-300/30 to-cyan-300/40 dark:from-indigo-500/20 dark:via-sky-500/15 dark:to-cyan-500/20" />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-50/30 dark:from-slate-900/20" />
               <div className="absolute bottom-3 right-3 rounded-full bg-white/90 px-2 py-1 text-xs font-semibold shadow dark:bg-slate-800/90 dark:text-slate-100">
                 <Sparkles className="mr-1 inline h-3.5 w-3.5" /> Hello!
