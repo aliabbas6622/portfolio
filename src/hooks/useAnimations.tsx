@@ -339,7 +339,7 @@ export function useAnimations(customConfig?: Partial<AnimationConfig>) {
 
 // Specialized hooks for common use cases
 export function useEntranceAnimation(delay: number = 0) {
-  const { presets, shouldAnimate, createVariants } = useAnimations()
+  const { shouldAnimate, createVariants } = useAnimations()
 
   const variants = createVariants({
     hidden: { opacity: 0, y: 30 },
