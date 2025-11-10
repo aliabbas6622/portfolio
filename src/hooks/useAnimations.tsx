@@ -442,7 +442,7 @@ export function useAnimationOptimizer(threshold: number = 30) {
     if (shouldOptimize) {
       console.log('Animation optimization triggered due to performance:', performance)
     }
-  }, [performance, threshold])
+  }, [performance.fps, performance.isOptimal, threshold])
 
   return { isOptimized, performance }
 }
