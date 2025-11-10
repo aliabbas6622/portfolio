@@ -35,7 +35,7 @@ export function useAnimationPerformance() {
   })
 
   const frameCount = useRef(0)
-  const lastTime = useRef(performance.now())
+  const lastTime = useRef(Date.now())
   const animationFrameId = useRef<number>()
 
   useEffect(() => {
