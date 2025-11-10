@@ -346,7 +346,7 @@ export function useAnimations(customConfig?: Partial<AnimationConfig>) {
 }
 
 // Specialized hooks for common use cases
-export function use entranceAnimation(delay: number = 0) {
+export function useEntranceAnimation(delay: number = 0) {
   const { presets, shouldAnimate, createVariants } = useAnimations()
 
   const variants = createVariants({
