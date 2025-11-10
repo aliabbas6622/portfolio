@@ -264,7 +264,7 @@ export function useAnimations(customConfig?: Partial<AnimationConfig>) {
 
   // Staggered children animation
   const useStaggeredAnimation = useCallback(
-    (itemCount: number, staggerDelay: number = 0.1) => {
+    (itemCount: number, _staggerDelay: number = 0.1) => {
       const [visibleItems, setVisibleItems] = useState<Set<number>>(new Set())
 
       const showItem = useCallback((index: number) => {
