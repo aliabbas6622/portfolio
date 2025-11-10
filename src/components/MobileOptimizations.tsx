@@ -314,7 +314,7 @@ function BottomNavigation() {
 
   const navItems = [
     { id: 'home', label: 'Home', href: '#top', icon: Home },
-    { id: 'projects', label: 'Projects', href: '#projects', icon: SwipeHorizontal },
+    { id: 'projects', label: 'Projects', href: '#projects', icon: FlipHorizontal },
     { id: 'contact', label: 'Contact', href: '#contact', icon: MessageCircle },
   ]
 
