@@ -97,10 +97,8 @@ export function useAnimations(customConfig?: Partial<AnimationConfig>) {
     (initialValue: number, transform?: (value: number) => any) => {
       const value = useMotionValue(initialValue)
       const spring = useSpring(value, {
-        config: {
-          ...DEFAULT_CONFIGS.spring,
-          ...config,
-        },
+        ...DEFAULT_CONFIGS.spring,
+        ...config,
         immediate: !shouldAnimate,
       })
 
