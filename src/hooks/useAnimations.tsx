@@ -1,5 +1,4 @@
-import React from 'react'
-import { useReducedMotion, useSpring, useMotionValue, useTransform, useAnimation } from 'framer-motion'
+import { useReducedMotion, useSpring, useMotionValue, useTransform } from 'framer-motion'
 import { useEffect, useState, useCallback, useRef } from 'react'
 
 // Animation configuration interface
