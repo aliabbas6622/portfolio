@@ -117,7 +117,7 @@ export function useAnimations(customConfig?: Partial<AnimationConfig>) {
       if (!shouldAnimate) {
         // Return disabled variants for reduced motion
         return Object.keys(variants).reduce((acc, key) => {
-          acc[key] = typeof variants[key] === 'object' ? { ...variants[key], transition: { duration: 0 } } : variants[key]
+          (acc as any)[key] = typeof variants[key] === 'object' ? { ...variants[key], transition: { duration: 0 } } : variants[key]
           return acc
         }, {} as T)
       }
