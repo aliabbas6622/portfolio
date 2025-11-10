@@ -85,17 +85,11 @@ export function useAnimations(customConfig?: Partial<AnimationConfig>) {
 
   // Create spring values for smooth animations
   const createSpring = useCallback((to: number, springConfig?: Partial<AnimationConfig>) => {
-    const springValues = useSpring({
-      from: 0,
-      to,
-      config: {
-        ...DEFAULT_CONFIGS.spring,
-        ...springConfig,
-      },
+    return useSpring(to, {
+      ...DEFAULT_CONFIGS.spring,
+      ...springConfig,
       immediate: !shouldAnimate,
     })
-
-    return springValues
   }, [shouldAnimate])
 
   // Create animated values with transforms
