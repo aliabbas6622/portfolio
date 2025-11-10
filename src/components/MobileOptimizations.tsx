@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState, useRef, useCallback } from 'react'
-import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
-import { ChevronUp, MessageCircle, Home, X, SwipeHorizontal } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { ChevronUp, MessageCircle, Home, X, FlipHorizontal } from 'lucide-react'
 
 interface MobileContextType {
   // Touch gestures
