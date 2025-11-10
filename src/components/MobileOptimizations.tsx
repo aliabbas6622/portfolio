@@ -415,7 +415,7 @@ function SwipeGestureIndicator() {
           exit={{ opacity: 0, y: 20 }}
         >
           <div className="bg-slate-900 text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
-            <SwipeHorizontal className="h-4 w-4 animate-pulse" />
+            <FlipHorizontal className="h-4 w-4 animate-pulse" />
             <span className="text-sm">Swipe to navigate</span>
           </div>
         </motion.div>
