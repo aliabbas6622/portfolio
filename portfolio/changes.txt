@@ -19,3 +19,11 @@ Date: 2025-12-10
 ## Status: ✅ RESOLVED
 - Dev server running successfully on http://localhost:5173/
 - All React Three Fiber components should now work properly
+
+## Server Network Exposure (2025-12-10 09:51)
+1. Stopped all running Node.js processes using taskkill command
+2. Restarted Vite dev server with --host flag to expose to local network
+3. Server now accessible at:
+   - Local: http://localhost:5173/
+   - Network: http://192.168.1.5:5173/
+4. Other devices on the same network can now access the portfolio
