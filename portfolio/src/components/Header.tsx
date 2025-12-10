@@ -38,7 +38,7 @@ export function Header() {
     >
       <ScrollProgress />
       <nav className="container">
-        <div className="glass mx-auto flex h-14 items-center justify-between rounded-full px-4 shadow">
+        <div className="glass mx-auto flex h-16 items-center justify-between rounded-full px-4 shadow">
           <a href="#top" className="text-sm font-extrabold tracking-tight">Ali Abbas</a>
           <ul className="hidden items-center gap-2 md:flex">
             {links.map((l) => (
@@ -52,10 +52,10 @@ export function Header() {
               </li>
             ))}
           </ul>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1 sm:gap-2">
             <ThemeToggle />
-            <a href="https://github.com/aliabbas6622" target="_blank" rel="noreferrer" className="hidden rounded-full p-2 text-slate-700 transition hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 md:block"><Github className="h-4 w-4" /></a>
-            <a href="https://linkedin.com/in/aliabbas6622" target="_blank" rel="noreferrer" className="hidden rounded-full p-2 text-slate-700 transition hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 md:block"><Linkedin className="h-4 w-4" /></a>
+            <a href="https://github.com/aliabbas6622" target="_blank" rel="noreferrer" className="rounded-full p-2 text-slate-700 transition hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800"><Github className="h-4 w-4" /></a>
+            <a href="https://linkedin.com/in/aliabbas6622" target="_blank" rel="noreferrer" className="rounded-full p-2 text-slate-700 transition hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800"><Linkedin className="h-4 w-4" /></a>
             <a href="#contact" className="btn btn-ghost hidden md:inline-flex transition hover:-translate-y-0.5">Work with me</a>
           </div>
         </div>
