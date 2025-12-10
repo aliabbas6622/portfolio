@@ -28,7 +28,7 @@ function DockIcon({
     })
 
     // Smaller on mobile, magnify on desktop
-    const widthSync = useTransform(distance, [-100, 0, 100], [36, 48, 36])
+    const widthSync = useTransform(distance, [-100, 0, 100], [44, 64, 44])
     const width = useSpring(widthSync, { mass: 0.1, stiffness: 150, damping: 12 })
 
     return (
@@ -40,7 +40,7 @@ function DockIcon({
             whileHover={{ y: -6 }}
             whileTap={{ scale: 0.95 }}
         >
-            <item.icon className="h-4 w-4 text-slate-700 dark:text-slate-200" />
+            <item.icon className="h-5 w-5 text-slate-700 dark:text-slate-200" />
             {isActive && (
                 <motion.div
                     layoutId="dock-indicator"
@@ -58,11 +58,11 @@ function ThemeToggleDock() {
         <motion.button
             data-theme-toggle
             onClick={toggleTheme}
-            className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/80 backdrop-blur-md border border-white/30 shadow-md dark:bg-slate-800/80 dark:border-slate-700/50"
+            className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/80 backdrop-blur-md border border-white/30 shadow-md dark:bg-slate-800/80 dark:border-slate-700/50"
             whileHover={{ scale: 1.1, y: -6 }}
             whileTap={{ scale: 0.95 }}
         >
-            {theme === 'dark' ? <Sun className="h-4 w-4 text-amber-400" /> : <Moon className="h-4 w-4 text-slate-700" />}
+            {theme === 'dark' ? <Sun className="h-5 w-5 text-amber-400" /> : <Moon className="h-5 w-5 text-slate-700" />}
         </motion.button>
     )
 }
@@ -73,11 +73,11 @@ function SocialDock({ href, icon: Icon }: { href: string; icon: typeof Github })
             href={href}
             target="_blank"
             rel="noreferrer"
-            className="hidden sm:flex h-9 w-9 items-center justify-center rounded-xl bg-white/80 backdrop-blur-md border border-white/30 shadow-md dark:bg-slate-800/80 dark:border-slate-700/50"
+            className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/80 backdrop-blur-md border border-white/30 shadow-md dark:bg-slate-800/80 dark:border-slate-700/50"
             whileHover={{ scale: 1.1, y: -6 }}
             whileTap={{ scale: 0.95 }}
         >
-            <Icon className="h-4 w-4 text-slate-700 dark:text-slate-200" />
+            <Icon className="h-5 w-5 text-slate-700 dark:text-slate-200" />
         </motion.a>
     )
 }
