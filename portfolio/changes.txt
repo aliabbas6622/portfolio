@@ -49,3 +49,13 @@ Date: 2025-12-10
 2. Committed changes with message: "Fix Vercel deployment: Move build dependencies to production"
 3. Pushed to GitHub (commit hash: 977cdcb)
 4. Vercel will now automatically redeploy with correct dependencies
+
+## Profile Image Removal (2025-12-10 10:05)
+1. Removed profile image (ali.jpeg) from public folder
+2. Updated Hero.tsx to replace image with decorative placeholder:
+   - Added gradient background (indigo to purple)
+   - Centered Sparkles icon with name
+   - Maintained same layout and styling
+3. Committed changes with message: "Remove profile image and replace with decorative placeholder"
+4. Pushed to GitHub (commit hash: 095c8d9)
+5. Changes now live on repository
