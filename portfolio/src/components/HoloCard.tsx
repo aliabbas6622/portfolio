@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useTransform } from 'framer-motion'
 import clsx from 'clsx'
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 export default function HoloCard({ children, className }: { children: ReactNode, className?: string }) {
     const mouseX = useMotionValue(0.5)
