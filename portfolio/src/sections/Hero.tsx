@@ -46,8 +46,13 @@ export default function Hero() {
             transition={transition}
             className="flex justify-center md:justify-end"
           >
-            <div className="relative aspect-[4/5] w-60 overflow-hidden rounded-[24px] border border-slate-200 bg-white/50 shadow-2xl backdrop-blur md:w-[22rem] lg:w-[24rem] dark:bg-slate-900/50 dark:border-slate-800">
-              <img src="/ali.jpeg" alt="Ali Abbas" className="h-full w-full object-cover" />
+            <div className="relative aspect-[4/5] w-60 overflow-hidden rounded-[24px] border border-slate-200 bg-gradient-to-br from-indigo-50 to-purple-50 shadow-2xl backdrop-blur md:w-[22rem] lg:w-[24rem] dark:from-slate-900 dark:to-slate-800 dark:border-slate-800">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center space-y-3">
+                  <Sparkles className="h-16 w-16 mx-auto text-indigo-500 animate-pulse" />
+                  <p className="text-sm font-semibold text-slate-600 dark:text-slate-400">Ali Abbas</p>
+                </div>
+              </div>
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-50/30 dark:from-slate-900/20" />
               <div className="absolute bottom-3 right-3 rounded-full bg-white/90 px-2 py-1 text-xs font-semibold shadow dark:bg-slate-800/90 dark:text-slate-100">
                 <Sparkles className="mr-1 inline h-3.5 w-3.5" /> Hello!
